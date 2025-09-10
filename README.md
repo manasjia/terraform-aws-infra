@@ -2,7 +2,7 @@
 
 This repository contains a production-ready Terraform project that provisions AWS infrastructure including networking, security groups, and compute resources. It is designed as a showcase project for demonstrating DevOps/SRE expertise on Fiverr and GitHub.
 
-Features
+**Features**
 
 ✅ Infrastructure as Code using Terraform
 ✅ Modularized files (networking.tf, security.tf, main.tf)
@@ -11,8 +11,7 @@ Features
 ✅ Configures Security Groups for controlled access
 ✅ User-data script installs and configures Nginx automatically
 ✅ Outputs include EC2 public IP for quick access
-
-Project Structure
+**Project Structure**
 
 terraform-aws-infra/
 │── README.md                # Documentation
@@ -26,19 +25,17 @@ terraform-aws-infra/
 │── terraform.tfstate.backup # State backup
 
 
-Prerequisites
+**Prerequisites**
 
-Terraform
- >= 1.5
+Terraform >= 1.5
 
-AWS CLI
- configured with valid credentials
+AWS CLI  configured with valid credentials
 
 An AWS account with appropriate IAM permissions
 
 SSH key pair (if you plan to connect via SSH to EC2)
 
-🚀 How to Use
+**🚀 How to Use**
 1. Clone the repo
 git clone git@github.com:manasjia/terraform-aws-infra.git
 cd terraform-aws-infra
@@ -79,7 +76,7 @@ http://<EC2_PUBLIC_IP>
 
 You should see:
 
-<h1>Welcome to Fiverr Demo Project 🚀 (Ubuntu)</h1>
+Welcome to Fiverr Demo Project 🚀 (Ubuntu)
 
 🧹 Cleanup
 
@@ -87,7 +84,7 @@ To destroy all resources and avoid charges:
 
 terraform destroy
 
-🔒 Best Practices Followed
+**🔒 Best Practices Followed**
 
 Used .gitignore to exclude sensitive files (*.tfstate, .terraform/)
 
@@ -96,8 +93,8 @@ Variables and outputs are separated for reusability
 Infrastructure split into logical files for readability
 
 User-data script handles automated provisioning of EC2 services
-
-📌 Future Enhancements
+**
+📌 Future Enhancements**
 
 Add S3 remote backend for Terraform state
 
@@ -107,7 +104,7 @@ Implement CI/CD pipeline to auto-apply infrastructure changes
 
 Integrate Prometheus + Grafana for monitoring EC2 instance
 
-👨‍💻 Author
+**👨‍💻 Author**
 
 Manas J
 DevOps & SRE Specialist | 17+ Years IT Experience | AWS | Kubernetes | Terraform | CI/CD
